@@ -1,0 +1,139 @@
+#contact_section {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+#contact_section .inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+#contact_section .inner .contact_image {
+  width: 100%;
+  max-height: 600px;
+  margin-top: 100px;
+}
+#contact_section .inner .contact_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#contact_section .inner .inner_contact_wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contact_section .inner .inner_contact_wrapper h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+#contact_section .inner .inner_contact_wrapper p {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  color: rgb(120, 120, 120);
+}
+#contact_section .inner .form {
+  margin-top: 60px;
+  width: 100%;
+  color: rgb(50, 50, 50);
+}
+#contact_section .inner .form label {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+#contact_section .inner .form input {
+  padding: 15px 15px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 8px;
+  width: 45%;
+  font-size: 1.5rem;
+  color: black;
+}
+#contact_section .inner .form input[type=email] {
+  display: block;
+  width: 90%;
+}
+#contact_section .inner .form textarea {
+  width: 90%;
+  resize: vertical;
+  padding: 20px;
+  font-size: 1.5rem;
+  border: 1px solid rgb(200, 200, 200);
+}
+#contact_section .inner .form button {
+  border: none;
+  padding: 20px 50px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 150px;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+#contact_section .inner .form button:hover {
+  background-color: rgb(30, 30, 30);
+}
+@media screen and (min-width: 980px) {
+  #contact_section .inner {
+    justify-content: space-between;
+    width: 80%;
+  }
+  #contact_section .inner .contact_image {
+    flex-basis: 45%;
+    margin-top: 200px;
+    max-height: 900px;
+  }
+  #contact_section .inner .inner_contact_wrapper {
+    margin-top: 200px;
+    flex-basis: 50%;
+  }
+  #contact_section .inner .inner_contact_wrapper h2 {
+    font-size: 3.5rem;
+  }
+}
+
+.icons a img {
+  width: 40px;
+  height: 40px;
+}
+
+#whatsapp_icon,
+#insta_icon {
+  display: block;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+}
+#whatsapp_icon:hover,
+#insta_icon:hover {
+  animation: pulse 0.3s infinite alternate;
+  cursor: pointer;
+}
+
+#whatsapp_icon {
+  width: 50px;
+  height: 50px;
+}
+
+#insta_icon {
+  right: 80px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Initial size */
+  }
+  100% {
+    transform: scale(1.1); /* Increased size */
+  }
+}/*# sourceMappingURL=contact.css.map */

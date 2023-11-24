@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700;900&family=Nosifer&family=Playfair+Display:wght@400;600;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/9c3d7ef638.js" crossorigin="anonymous"></script>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="{% static 'assets/styles/index.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/styles/contact.css' %}">
+
+    <!-- custom script -->
+    <script src="{% static 'scripts/animation.js' %}" defer></script>
+
+    <title>Contact - Nwike's ART</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="contact_header">
+
+        <!-- Mobile Nav starts-->
+        <nav id="mobile_nav">
+            <h1 id="nwike">NWIKE'S <span>ART</span></h1>
+            <img src="{% static 'assets/site_images/burger-solid (1).svg' %}" width="30px" id="menu_btn">
+            
+            <div class="nav_links contact_nav_links">
+                <span class="close_nav_btn">X</span>
+                <div class="link">
+                    <p><a href="index.html">Home</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="index.html#about">About</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="index.html#wat">Selected Works</a></p>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile Nav Ends -->
+
+        <!-- Desktop Nav Starts -->
+        <nav id="desktop_nav">
+            <h1 class="contact_h1">NWIKE'S <span>ART</span></h1>
+
+            <div class="contact_links">
+                <div class="link">
+                    <p><a href="index.html">Home</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="index.html#about">About</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="index.html#wat">Selected Works</a></p>
+                </div>
+            </div>
+        </nav>
+        <!-- Desktop Nav Ends -->
+    </header>
+    <!-- Header Section Ends -->
+
+
+    <!-- Contact Section Starts -->
+    <section id="contact_section">
+        <div class="inner">
+            <div class="contact_image">
+                <img src="{% static 'assets/site_images/work11.jpg' %}" alt="contact image">
+            </div>
+    
+            <div class="inner_contact_wrapper">
+                <h2>Get In Touch</h2>
+                <!-- <p>Your thoughts and inquiries matter. Whether you're an art enthusiast, collaborator, or art lover, we're excited to hear from you. Reach out, and let's explore the world of art together.
+                <br><br>
+                Warm regards,
+                <br>
+                <b>NWIKE</b></p> -->
+                <p>If you have any questions about my work or myself as an artist don´t hesitate to email me.
+
+                    I am also open for commissions if they match my body of work and will happily discuss your ideas with you.</p>
+
+                <div class="form">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <label for="name">Name*</label>
+                        <input type="text" name="first_name" id="" placeholder="First Name">
+                        <input type="text" name="last_name" id="" placeholder="Last Name">
+
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="">
+
+                        <label for="message">Message*</label>
+                        <textarea name="message" id="" cols="30" rows="10" ></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Ends -->
+
+    <div class="icons">
+        <a href="https://wa.me/9010215905" target="_blank"><img src="{% static 'assets/site_images/whatsappIcon.png' %}" alt="" id="whatsapp_icon"></a>
+
+        <a href="https://www.instagram.com/agunwike/"><img src="{% static 'assets/site_images/icons8-instagram-logo-64.png' %}" alt="" id="insta_icon"></a>
+    </div>
+</body>
+</html>

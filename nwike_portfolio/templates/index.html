@@ -1,0 +1,327 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700;900&family=Nosifer&family=Playfair+Display:wght@400;600;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/9c3d7ef638.js" crossorigin="anonymous"></script>
+
+    <!-- SWIPER JS CDN -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="{% static 'assets/styles/index.css' %}">
+
+    <!-- custom script -->
+    <script src="{% static 'scripts/animation.js' %}" defer></script>
+
+    <title>Nwike's ART</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="{% static 'assets\site_images\nwike_art1.jpg' %}" alt="Image 1" id="home_bg">
+        <div class="image-overlay"></div>
+
+        <!-- Mobile Nav starts-->
+        <nav id="mobile_nav">
+            <h1>NWIKE'S <span>ART</span></h1>
+            <img src="{% static 'assets/site_images/burger-solid (1).svg' %}" width="30px" id="menu_btn">
+            
+            <div class="nav_links">
+                <span class="close_nav_btn">X</span>
+                <div class="link">
+                    <p><a href="index.html">Home</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="#about">About</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="{% url 'contact' %}">Contact</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="#wat">Selected Works</a></p>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile Nav Ends -->
+
+        <!-- Desktop Nav Starts -->
+        <nav id="desktop_nav">
+            <h1>NWIKE'S <span>ART</span></h1>
+
+            <div class="links">
+                <div class="link">
+                    <p><a href="index.html">Home</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="#about">About</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="{% url 'contact' %}">Contact</a></p>
+                </div>
+                <div class="link">
+                    <p><a href="#wat">Selected Works</a></p>
+                </div>
+            </div>
+        </nav>
+        <!-- Desktop Nav Ends -->
+
+        <!-- Hero Section -->
+        <div id="hero">
+            <div class="hero_text">
+                <h1>NWIKE'S <span>ART</span></h1>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section Ends -->
+
+
+    <!-- Quote Section Starts -->
+    <section id="quote">
+        <h3>“Everybody born comes from the Creator trailing wisps of glory. We come from the Creator with creativity. I think that each one of us is born with creativity.” <br> – Maya Angelou</h3>
+
+        <button><a href="">Explore Art Works</a></button>
+    </section>
+    <!-- Quote Section Ends -->
+
+
+    <!-- Bio Section starts -->
+    <section class="bio" id="about">
+        <div class="artist_img_wrapper">
+            <img src="{% static 'assets/site_images/nwiks.jpg' %}" alt="Artist Image" srcset="">
+        </div>
+        <div class="artist_info">
+            <h2>Agu Nwike</h2>
+
+            <p>
+                Agu Nwike, born in 2005 in Lagos, Nigeria, is a versatile artist and creative technologist based at the University of Benin. Founder of projects like POST-VIVO, Xylantha, AI Markus, and mask.in.drome, Nwike explores multimedia works, from sound to video.
+                <br>
+                Engaging with ever-changing social constructs, Nwike embraces process anarchy, favoring expressive clarity over technical completeness. With a love for foreign hip-hop and an interest in robotics, his creativity spans various domains.
+                <br>
+                While studying architecture at the University of Benin, Nwike seamlessly integrates academic insights into his art, influencing a distinctive style. His projects aim to bring out the utmost beauty, often showcasing mastery in pencil art.
+                <br>
+                Nwike's works featured in the Faculty of Environmental Science Student Association (FESSA) Uniben Exhibition, highlighting his impact within the university community.
+                <br>
+                Driven to inspire through his art, Nwike actively breaks down class barriers, promoting inclusivity and fostering an inclusive future in artistic expression. Agu Nwike's story is one of exploration, innovation, and a passionate pursuit of beauty in all forms.</p>
+        </div>
+    </section>
+    <!-- Bio Section Ends -->
+
+    <!-- Work and thoughts Section starts -->
+    <section class="work_and_thoughts" id="wat">
+        <h2>Work and Thoughts</h2>
+        <div class="w_a_t_container">
+            <div class="w_a_t">
+                <div class="image">
+                    <img src="{% static 'assets/site_images/nwike_art3.jpg' %}" alt="">
+                </div>
+                <div class="image_bio">
+                    <p><i>How does the language of hands speak the untold stories of our lives?</i></p>
+                </div>
+                <div class="image_desc">
+                    <h3>Portraiture: "A Walk Through Time"</h3>
+                    <p>In <i>"A Walk Through Time," </i>hands become the storytellers of life's journey. The delicate interplay between young and weathered hands suggests a shared narrative, emphasizing the transient beauty of time. The bangle's inscription, "It's Only A Short Stroll, Enjoy It," prompts contemplation on the fleeting nature of our existence and the wisdom embedded in aging hands.</p>
+                </div>
+            </div>
+
+            <div class="w_a_t">
+                <div class="image">
+                    <img src="{% static 'assets/site_images/nwike_art1.jpg' %}" alt="">
+                </div>
+                <div class="image_bio">
+                    <p><i>Can innocence paint the brightest pictures in the canvas of the night?</i></p>
+                </div>
+                <div class="image_desc">
+                    <h3>Portraiture: "Moonlit Surprises"
+                    </h3>
+                    <p><i>"Moonlit Surprises"</i> captures the enchanting innocence of childhood. In the silent night, two young African souls, aged around 7 and 6, share a magical moment. The girl, eyes closed, anticipates a surprise from the boy. As he unveils a radiant heart in his palms, the moonlight illuminates the tire they sit in, creating a timeless scene of youthful wonder, love, and the unspoken beauty of shared secrets.</p>
+                </div>
+            </div>
+
+            <div class="w_a_t">
+                <div class="image">
+                    <img src="{% static 'assets/site_images/nwike_art2.jpg' %}" alt="">
+                </div>
+                <div class="image_bio">
+                    <p><i>Can one canvas hold the contrasting tales of maturity and innocence?
+
+                    </i></p>
+                </div>
+                <div class="image_desc">
+                    <h3>Portraiture: "Duality of Joy"</h3>
+                    <p><i>"Duality of Joy"</i> paints a poignant portrait of contrasting emotions. On the left, the countenance of a young woman reflects the depth of experiences, marked by a matured gaze. On the right, a young girl beams with unbridled joy, embracing the simplicity of innocence. The split canvas captures the spectrum of life's journey—where one finds resilience in maturity, while the other revels in the pure, untainted bliss of youth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Work and thoughts section ends -->
+
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <h1>"</h1>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cumque enim rerum officiis quis aut labore, a magni ex incidunt quae. Modi rem nesciunt mollitia ut deserunt quis pariatur. </p>
+
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="{% static 'assets/site_images/artist_image.jpg' %}" alt="">
+                                </div>
+                                <h3>Someone Famous <br> <span></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <h1>"</h1>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cumque enim rerum officiis quis aut labore, a magni ex incidunt quae. Modi rem nesciunt mollitia ut deserunt quis pariatur. </p>
+
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="{% static 'assets/site_images/artist_image.jpg' %}" alt="">
+                                </div>
+                                <h3>Someone Famous <br> <span></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <h1>"</h1>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cumque enim rerum officiis quis aut labore, a magni ex incidunt quae. Modi rem nesciunt mollitia ut deserunt quis pariatur. </p>
+
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="{% static 'assets/site_images/artist_image.jpg' %}" alt="">
+                                </div>
+                                <h3>Someone Famous <br> <span></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <h1>"</h1>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cumque enim rerum officiis quis aut labore, a magni ex incidunt quae. Modi rem nesciunt mollitia ut deserunt quis pariatur. </p>
+
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="{% static 'assets/site_images/artist_image.jpg' %}" alt="">
+                                </div>
+                                <h3>Someone Famous <br> <span></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <h1>"</h1>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cumque enim rerum officiis quis aut labore, a magni ex incidunt quae. Modi rem nesciunt mollitia ut deserunt quis pariatur. </p>
+
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="{% static 'assets/site_images/artist_image.jpg' %}" alt="">
+                                </div>
+                                <h3>Someone Famous <br> <span></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+
+    <!-- Selected Work Section Starts -->
+    <section id="selected_works">
+        <h2>Explore Art</h2>
+        <div class="inner_wrapper">
+            <div class="image_column">
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work1.jpg' %}" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work2.jpg' %}" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work3.jpg' %}" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work4.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="image_column">
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work5.jpg' %}" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work6.jpg' %}" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work7.jpg' %}" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work8.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="image_column">
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work9.jpg' %}" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work10.jpg' %}" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work11.jpg' %}" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work12.jpg' %}" alt="">
+                </div>
+                <div class="">
+                    <div class="work_img_bg"><h3>Art By Nwike</h3></div>
+                    <img src="{% static 'assets/site_images/work13.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Selected Work Section Ends -->
+</body>
+</html>
